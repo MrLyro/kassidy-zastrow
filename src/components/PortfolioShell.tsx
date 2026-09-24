@@ -42,7 +42,7 @@ export function PortfolioShell({children}: {children: ReactNode}) {
   </VStack>;
   const footerLinks = <VStack gap={2} align={isMobile ? 'center' : 'start'}>
     <Link href={sitePath('/about')} color="primary" hasUnderline>About me</Link>
-    <Link href={sitePath('/documents/kassidy-zastrow-resume.pdf')} download color="primary" hasUnderline>Download résumé</Link>
+    <Link href={sitePath('/documents/kassidy-zastrow-resume.pdf')} download color="primary" hasUnderline>Download resume</Link>
     <Link href={sitePath('/documents/kassidy-zastrow-portfolio.pdf')} download color="primary" hasUnderline>Download portfolio</Link>
   </VStack>;
   // Shallow three-link navigation wraps on small screens; content grids reflow by
