@@ -37,7 +37,7 @@ export function PortfolioShell({children}: {children: ReactNode}) {
   }
   const footerIntro = <VStack gap={6} align={isMobile ? 'center' : 'start'} style={isMobile ? {textAlign: 'center'} : undefined}>
     <Text type="supporting">GET IN TOUCH</Text>
-    <Link href={sitePath('/contact')} color="primary" hasUnderline isStandalone>Have a project in mind? Let’s connect.</Link>
+    <Link href={sitePath('/contact')} color="primary" hasUnderline isStandalone>Want to reach out? Let’s connect.</Link>
     <Text>Architecture student at Texas A&M University.<br />Interested in opportunities to learn, design, and build.</Text>
   </VStack>;
   const footerLinks = <VStack gap={2} align={isMobile ? 'center' : 'start'}>

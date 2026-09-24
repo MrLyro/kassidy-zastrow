@@ -16,7 +16,7 @@ export default function Home() {
         <MobileCenter><Text type="supporting">ARCHITECTURE & DESIGN</Text></MobileCenter>
         <MobileCenter><Text type="supporting">TEXAS A&M UNIVERSITY / CLASS OF 2028</Text></MobileCenter>
       </HStack>
-      <MobileCenter><Heading level={1} type="display-1" style={{fontSize: 'min(var(--text-display-1-size), calc(var(--text-heading-2-size) * 3))'}}>Welcome to my<br />architecture portfolio.</Heading></MobileCenter>
+      <MobileCenter><Heading level={1} type="display-1" style={{fontSize: 'min(var(--text-display-1-size), calc(var(--text-heading-2-size) * 3))'}}>Welcome to My<br />Architecture Website</Heading></MobileCenter>
       <HStack justify="between" align="end" gap={8} wrap="wrap">
         <Text as="p" style={{maxWidth: '53ch'}}>A collection of projects where imagination meets thoughtful design and ideas take shape as spaces.</Text>
       </HStack>
@@ -24,7 +24,7 @@ export default function Home() {
     <Frame id="work" style={{backgroundColor: 'var(--color-background-muted)', paddingTop: 'var(--spacing-8)', paddingBottom: 'var(--spacing-8)'}}>
       <Grid columns={{minWidth: 340, max: 2}} gap={10}>
         <VStack gap={6}>
-          <MobileCenter><Heading level={2} type="display-2">Architecture projects</Heading></MobileCenter>
+          <MobileCenter><Heading level={2} type="display-2">Architecture Projects</Heading></MobileCenter>
         </VStack>
         <VStack gap={6} justify="center">
           <Text as="p">Below is a selection of my architecture projects. Explore each one to see the ideas behind the design, the process that shaped it, and the final work.</Text>
@@ -53,7 +53,7 @@ export default function Home() {
       <Grid columns={{minWidth: 340, max: 2}} gap={10}>
         <VStack gap={6}><MobileCenter><Text type="supporting">BEHIND THE WORK</Text></MobileCenter><MobileCenter><Heading level={2} type="display-2">Creativity.<br />Connection.</Heading></MobileCenter></VStack>
         <VStack gap={6} justify="center">
-          <Text as="p">Architecture gives me a way to connect creative ideas with the people who experience them. My work brings together design thinking, digital modeling, and physical making.</Text>
+          <Text as="p">Architecture gives me a way to connect creative ideas with the people who experience them. My work brings together design thinking, digital modeling, and physical model making.</Text>
           <Text as="p">From a single room to shared spaces, I’m interested in how thoughtful design can make everyday life feel more welcoming and connected.</Text>
           <MobileCenter><Link href={sitePath('/about')} color="primary" hasUnderline isStandalone>More about Kassidy</Link></MobileCenter>
         </VStack>
