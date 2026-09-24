@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+output/
+tmp/
+*.tsbuildinfo
+.DS_Store
+.env*
+drive-download-*/
+Kassidy Zastrow Informational/
+CONTENT-NOTES.md
