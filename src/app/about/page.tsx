@@ -20,8 +20,8 @@ export default function About() {
         <Text as="p">In studio, I enjoy moving between digital models, physical models, drawings, and presentations. Spending time on residential construction sites has helped me understand how an idea on paper becomes a real place, one decision at a time.</Text>
         <VStack gap={3} style={{borderTop: rule, paddingTop: 'var(--spacing-6)'}}>
           <MobileCenter><Heading level={2}>Downloads</Heading></MobileCenter>
-          <Link href={sitePath('/documents/kassidy-zastrow-resume.pdf')} download hasUnderline color="primary" isStandalone>Download résumé ↓</Link>
-          <Link href={sitePath('/documents/kassidy-zastrow-portfolio.pdf')} download hasUnderline color="primary" isStandalone>Download portfolio ↓</Link>
+          <Link href={sitePath('/documents/kassidy-zastrow-resume.pdf')} download hasUnderline color="primary" isStandalone>Download résumé</Link>
+          <Link href={sitePath('/documents/kassidy-zastrow-portfolio.pdf')} download hasUnderline color="primary" isStandalone>Download portfolio</Link>
           <Text type="supporting">2026 · PDF format</Text>
         </VStack>
       </VStack>

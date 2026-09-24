@@ -27,7 +27,7 @@ export default async function ProjectPage({params}: {params: Promise<{slug: stri
   const next = featuredProjects[(featuredIndex + 1) % featuredProjects.length];
   return <>
     <Frame id="top" style={{paddingBottom: 'var(--spacing-8)'}}>
-      <Link href={sitePath('/#work')} color="secondary">← Architecture projects</Link>
+      <Link href={sitePath('/#work')} color="secondary">Architecture projects</Link>
       <VStack gap={6}><MobileCenter><Text type="supporting">{project.number} / {project.category.toUpperCase()}</Text></MobileCenter><MobileCenter><Heading level={1} type="display-1">{project.title}</Heading></MobileCenter><MobileCenter><Text type="large" weight="normal">{project.tagline}</Text></MobileCenter></VStack>
       <img src={project.images[0].src} alt={project.images[0].alt} width={1600} height={1100} fetchPriority="high"
         style={{width: '100%', height: 'auto', maxHeight: '80vh', objectFit: 'contain', backgroundColor: 'var(--color-background-muted)'}} />
@@ -42,7 +42,7 @@ export default async function ProjectPage({params}: {params: Promise<{slug: stri
       <Gallery images={project.images} />
       <VStack gap={4} style={{borderTop: rule, paddingTop: 'var(--spacing-10)', marginTop: 'var(--spacing-10)'}}>
         <Text type="supporting">NEXT PROJECT / {next.number}</Text>
-        <Link href={sitePath(`/work/${next.slug}`)} color="primary" hasUnderline isStandalone>{next.title} ↗</Link>
+        <Link href={sitePath(`/work/${next.slug}`)} color="primary" hasUnderline isStandalone>{next.title}</Link>
       </VStack>
     </Frame>
   </>;

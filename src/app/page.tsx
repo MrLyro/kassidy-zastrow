@@ -42,7 +42,7 @@ export default function Home() {
           <HStack justify="between" align="start" gap={4}>
             <VStack gap={2} style={{width: '100%'}}>
               <MobileCenter><Text type="supporting">{project.number} / {project.category}</Text></MobileCenter>
-              <MobileCenter><Heading level={3}><Link href={sitePath(`/work/${project.slug}`)} color="primary"><Text size="2xl" weight="normal" style={{fontFamily: 'var(--font-family-heading)', letterSpacing: 'normal'}}>{project.title} ↗</Text></Link></Heading></MobileCenter>
+              <MobileCenter><Heading level={3}><Link href={sitePath(`/work/${project.slug}`)} color="primary"><Text size="2xl" weight="normal" style={{fontFamily: 'var(--font-family-heading)', letterSpacing: 'normal'}}>{project.title}</Text></Link></Heading></MobileCenter>
               <MobileCenter><Text color="secondary">{project.tagline}</Text></MobileCenter>
             </VStack>
           </HStack>
@@ -55,7 +55,7 @@ export default function Home() {
         <VStack gap={6} justify="center">
           <Text as="p">Architecture gives me a way to connect creative ideas with the people who experience them. My work brings together design thinking, digital modeling, and physical making.</Text>
           <Text as="p">From a single room to shared spaces, I’m interested in how thoughtful design can make everyday life feel more welcoming and connected.</Text>
-          <MobileCenter><Link href={sitePath('/about')} color="primary" hasUnderline isStandalone>More about Kassidy ↗</Link></MobileCenter>
+          <MobileCenter><Link href={sitePath('/about')} color="primary" hasUnderline isStandalone>More about Kassidy</Link></MobileCenter>
         </VStack>
       </Grid>
     </Frame>

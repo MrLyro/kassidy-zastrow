@@ -37,13 +37,13 @@ export function PortfolioShell({children}: {children: ReactNode}) {
   }
   const footerIntro = <VStack gap={6} align={isMobile ? 'center' : 'start'} style={isMobile ? {textAlign: 'center'} : undefined}>
     <Text type="supporting">GET IN TOUCH</Text>
-    <Link href={sitePath('/contact')} color="primary" hasUnderline isStandalone>Have a project in mind? Let’s connect. ↗</Link>
+    <Link href={sitePath('/contact')} color="primary" hasUnderline isStandalone>Have a project in mind? Let’s connect.</Link>
     <Text>Architecture student at Texas A&M University.<br />Interested in opportunities to learn, design, and build.</Text>
   </VStack>;
   const footerLinks = <VStack gap={2} align={isMobile ? 'center' : 'start'}>
-    <Link href={sitePath('/about')} color="primary" hasUnderline>About me ↗</Link>
-    <Link href={sitePath('/documents/kassidy-zastrow-resume.pdf')} download color="primary" hasUnderline>Download résumé ↓</Link>
-    <Link href={sitePath('/documents/kassidy-zastrow-portfolio.pdf')} download color="primary" hasUnderline>Download portfolio ↓</Link>
+    <Link href={sitePath('/about')} color="primary" hasUnderline>About me</Link>
+    <Link href={sitePath('/documents/kassidy-zastrow-resume.pdf')} download color="primary" hasUnderline>Download résumé</Link>
+    <Link href={sitePath('/documents/kassidy-zastrow-portfolio.pdf')} download color="primary" hasUnderline>Download portfolio</Link>
   </VStack>;
   // Shallow three-link navigation wraps on small screens; content grids reflow by
   // minimum track width. Media fills the frame, prose caps at 62 characters.
@@ -57,7 +57,7 @@ export function PortfolioShell({children}: {children: ReactNode}) {
         <HStack gap={6} justify={isMobile ? 'center' : 'start'} align="center" wrap="wrap" style={isMobile ? {width: '100%'} : undefined}>
           <Link href={sitePath('/#work')} color="primary" isStandalone onClick={scrollToProjects}>Projects</Link>
           <Link href={sitePath('/about')} color="primary" isStandalone>About</Link>
-          <Link href={sitePath('/contact')} color="primary" isStandalone>Get in touch ↗</Link>
+          <Link href={sitePath('/contact')} color="primary" isStandalone>Get in touch</Link>
         </HStack>
       </HStack>
     }>
@@ -66,9 +66,9 @@ export function PortfolioShell({children}: {children: ReactNode}) {
         {isContact ? <HStack justify="between" align="end" wrap="wrap" gap={6}>
           <VStack gap={4} align="start">
           <Text type="supporting">DISCOVER THE WORK</Text>
-          <Link href={sitePath('/#work')} color="primary" hasUnderline isStandalone onClick={scrollToProjects}>Explore architecture projects ↗</Link>
+          <Link href={sitePath('/#work')} color="primary" hasUnderline isStandalone onClick={scrollToProjects}>Explore architecture projects</Link>
           </VStack>
-          <Link href={sitePath('/about')} color="primary" hasUnderline isStandalone>About me ↗</Link>
+          <Link href={sitePath('/about')} color="primary" hasUnderline isStandalone>About me</Link>
         </HStack> : isMobile ? <VStack gap={6} align="center">
           {footerIntro}
           {footerLinks}
@@ -78,7 +78,7 @@ export function PortfolioShell({children}: {children: ReactNode}) {
         </HStack>}
         <HStack justify="center" wrap="wrap" gap={4} style={{borderTop: rule, paddingTop: 'var(--spacing-6)'}}>
           <Text type="supporting" style={{width: '100%'}}>© {new Date().getFullYear()} Kassidy Zastrow · Selected academic work</Text>
-          <Link href="#top" color="primary" hasUnderline onClick={scrollToTop}>Back to top ↑</Link>
+          <Link href="#top" color="primary" hasUnderline onClick={scrollToTop}>Back to top</Link>
         </HStack>
       </VStack>
     </AppShell>
