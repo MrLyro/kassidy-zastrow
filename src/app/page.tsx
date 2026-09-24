@@ -42,7 +42,7 @@ export default function Home() {
           <HStack justify="between" align="start" gap={4}>
             <VStack gap={2} style={{width: '100%'}}>
               <MobileCenter><Text type="supporting">{project.number} / {project.category}</Text></MobileCenter>
-              <MobileCenter><Heading level={3}><Link href={sitePath(`/work/${project.slug}`)} color="primary"><Text size="2xl" weight="normal" style={{fontFamily: 'var(--font-family-heading)', letterSpacing: 'normal'}}>{project.title}</Text></Link></Heading></MobileCenter>
+              <MobileCenter><Heading level={3}><Link href={sitePath(`/work/${project.slug}`)} color="primary" hasUnderline><Text size="2xl" weight="normal" style={{fontFamily: 'var(--font-family-heading)', letterSpacing: 'normal'}}>{project.title}</Text></Link></Heading></MobileCenter>
               <MobileCenter><Text color="secondary">{project.tagline}</Text></MobileCenter>
             </VStack>
           </HStack>
