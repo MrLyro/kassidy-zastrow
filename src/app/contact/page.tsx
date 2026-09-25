@@ -17,8 +17,7 @@ export default function Contact() {
     <MobileCenter><Heading level={1} type="display-1" style={{fontSize: 'min(var(--text-display-1-size), calc(var(--text-heading-2-size) * 3))'}}>Let’s start a<br />conversation.</Heading></MobileCenter>
     <Grid columns={{minWidth: 340, max: 2}} gap={10}>
       <VStack gap={6} style={{maxWidth: '44ch'}}>
-        <MobileCenter><Heading level={2}>Opportunities. Ideas. Connections.</Heading></MobileCenter>
-        <Text as="p">For internship opportunities, project inquiries, or a conversation about the work, leave a message for Kassidy.</Text>
+        <Text as="p">For internship opportunities, project inquiries, or a conversation about the work, leave a message.</Text>
         <Text as="p" color="secondary">Architecture student at Texas A&M University.<br />Class of 2028.</Text>
       </VStack>
       <VStack style={{width: '100%', maxWidth: 640}}>
